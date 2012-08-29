@@ -34,7 +34,7 @@
   (interactive)
   (url-retrieve "http://theangrypolicecaptain.com"
 		(lambda (x)
-		  (re-search-forward "http://theangrypolicecaptain.com\">\n")
+		  (re-search-forward "http://theangrypolicecaptain.com\">")
 		  (let ((start-point (point))
 			end-point
 			quote)
